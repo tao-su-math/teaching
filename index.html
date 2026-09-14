@@ -56,11 +56,14 @@
       color: #f2f2f2;            /* slightly softened white */
       line-height: 50px;
       display: block;
+      transition: background-color 0.15s ease, color 0.15s ease;
     }
 
-    nav ul li a:hover {
-      background-color: #333;    /* subtle dark-gray hover */
-      color: #ffffff;
+    /* Hover and current page share the same highlight */
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #ffffff;
+      color: #1a4f9c;            /* classic academic blue */
     }
 
     /* Brand link (was an <h3> inside <li>) */
